@@ -10,7 +10,13 @@ namespace FindAndReplaceAppTest
         [Fact]
         public void FirstTestMethod_Functionality_Result()
         {
-            // Put stuff here
+            // Arrange
+            string userInput = "Hello world";
+            // Act
+            FindAndReplace newFindAndReplace = new FindAndReplace(userInput);
+
+            // Assert
+            Assert.Equal(userInput, newFindAndReplace.GetUserString());
         }
     }
 }
