@@ -19,7 +19,16 @@ namespace FindAndReplaceApp.Objects
 
         public bool LocateFindWord()
         {
+            if (_userString.Contains(_findWord))
+            {
+                return true;
+            }
             return false;
+        }
+
+        public string ReplaceFindWord()
+        {
+            return "blah";
         }
 
         public string GetUserString()

@@ -37,5 +37,22 @@ namespace FindAndReplaceAppTest
             // Assert
             Assert.Equal(true, newFindAndReplace.LocateFindWord());
         }
+
+        [Fact]
+        public void ReplaceFindWord_ReplaceTheFindeWord_ReplaceWord()
+        {
+            // Arrange
+            string userInput = "Hello world";
+            string word1 = "world";
+            string word2 = "universe";
+            string expectedResults = "Hello universe";
+
+            // Act
+            FindAndReplace newFindAndReplace = new FindAndReplace(userInput, word1, word2);
+
+
+            // Assert
+            Assert.Equal(expectedResults, newFindAndReplace.ReplaceFindWord());
+        }
     }
 }
