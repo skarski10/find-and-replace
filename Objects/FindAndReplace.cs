@@ -17,6 +17,11 @@ namespace FindAndReplaceApp.Objects
             _replaceWord = newReplaceWord;
         }
 
+        public bool LocateFindWord()
+        {
+            return false;
+        }
+
         public string GetUserString()
         {
             return _userString;
